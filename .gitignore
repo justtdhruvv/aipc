@@ -1,0 +1,164 @@
+# Update .gitignore to exclude all personal assets and photos
+gitignore_content = """# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Database files (contain personal photo data)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ==============================================
+# PERSONAL ASSETS - NEVER UPLOAD TO GITHUB
+# ==============================================
+
+# Photo directories (users create their own)
+photos_to_scan/
+!photos_to_scan/.gitkeep
+organized_photos/
+!organized_photos/.gitkeep
+CLEAN_PHOTOS/
+!CLEAN_PHOTOS/.gitkeep
+
+# Any photo files anywhere in the project
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.svg
+*.ico
+*.raw
+*.cr2
+*.nef
+*.orf
+*.sr2
+*.arw
+
+# Video files (in case users organize videos too)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.m4v
+
+# Reports and logs (contain personal data)
+*REPORT*.txt
+*REPORT*.md
+*CLEANUP*.txt
+*CLEANUP*.md
+*.log
+performance_*.json
+analysis_*.txt
+
+# User-generated folders and files
+MY_PHOTOS/
+PERSONAL_PHOTOS/
+TEST_PHOTOS/
+SAMPLE_PHOTOS/
+USER_DATA/
+backup/
+backups/
+old_photos/
+archive/
+Archives/
+
+# AI model downloads (large files, downloaded at runtime)
+models/
+weights/
+*.pt
+*.pth
+*.onnx
+*.pb
+*.tflite
+
+# Performance and analysis files
+benchmark_*.json
+test_results_*.txt
+user_analysis_*.csv
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Jupyter Notebooks (may contain personal data)
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables and config
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+conda-env/
+
+# User configuration files
+config.json
+settings.json
+user_preferences.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Compressed files (may contain personal photos)
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+
+# Windows batch file logs
+*.bat.log
+"""
+
+with open('.gitignore', 'w') as f:
+    f.write(gitignore_content)
+print("✅ Updated .gitignore to exclude ALL personal assets")
