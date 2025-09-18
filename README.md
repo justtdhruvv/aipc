@@ -11,24 +11,28 @@ Transform your chaotic photo collection into intelligently organized albums usin
 ## ✨ Key Features
 
 🧠 **Advanced AI Models**
+
 - **CLIP Semantic Understanding**: Recognizes concepts, objects, and scenes like a human
 - **ResNet50 Visual Features**: Deep visual pattern matching and similarity detection
 - **Face Recognition**: Groups photos by people automatically with 90% accuracy
 - **YOLO Object Detection**: Content-based categorization for landscapes, objects, pets
 
 🎯 **Intelligent Organization**
+
 - **Multi-Pass Clustering**: 4-stage similarity detection (75% → 60% → 50% → Face-specific)
 - **Adaptive Weighting**: Content-aware similarity calculation based on photo type
 - **Quality Thresholds**: Excellent (90%+), High (75%), Good (60%), Acceptable (50%)
 - **Zero False Positives**: Precise grouping without incorrect matches
 
 🚀 **Performance**
+
 - **86.7/100 Overall Score** (Grade A - Excellent)
 - **90% Organization Success Rate**
 - **100% AI Model Reliability**
 - **195% Better** than traditional hash-based methods
 
 🔐 **Privacy First**
+
 - **100% Local Processing** - No data sent to cloud
 - **Your Photos Stay Private** - All processing on your computer
 - **No Internet Required** - Works completely offline
@@ -36,6 +40,7 @@ Transform your chaotic photo collection into intelligently organized albums usin
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Python 3.8 or higher
 - CUDA-capable GPU (optional, but recommended for speed)
 - 4GB+ RAM
@@ -43,17 +48,20 @@ Transform your chaotic photo collection into intelligently organized albums usin
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/yourusername/ai-photo-organizer.git
 cd ai-photo-organizer
 ```
 
 2. **Install dependencies**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. **Organize your photos**
+
 ```bash
 # Copy your photos to the photos_to_scan folder
 cp /path/to/your/photos/* photos_to_scan/
@@ -69,7 +77,9 @@ python interactive_cleanup.py
 ```
 
 ### Windows Users
+
 Simply use the convenient batch files:
+
 ```cmd
 ORGANIZE_PHOTOS.bat    # Run the AI organizer
 CLEANUP_PHOTOS.bat     # Interactive cleanup
@@ -113,12 +123,14 @@ organized_photos/
 ## 🔧 Technical Details
 
 ### AI Models Used
+
 - **OpenAI CLIP**: Semantic understanding and concept recognition
 - **ResNet50**: Deep visual feature extraction (2,048 features per image)
 - **Face Recognition**: Advanced facial encoding and matching
 - **YOLO v8**: Real-time object detection and classification
 
 ### Multi-Pass Clustering Algorithm
+
 ```python
 # Enhanced clustering with 4 confidence levels
 def multi_pass_clustering():
@@ -129,6 +141,7 @@ def multi_pass_clustering():
 ```
 
 ### Adaptive Similarity Weighting
+
 ```python
 # Content-aware weighting
 if both_photos_have_faces:
@@ -163,8 +176,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/ai-photo-organizer/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/ai-photo-organizer/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/justtdhruvv/aipc/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/justtdhruvv/aipc/discussions)
 
 ---
 
